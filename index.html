@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!--declare html version 5-->
+<html lang="en"> <!--specify lang eng-->
+<head> <!--contains the meta data, external files-->
+  <meta charset="UTF-8"> <!--to display special characters-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--for view in mobile-->
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script> <!--library is imported for tailwind css-->
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-teal-600 p-4"> <!--50-lighest, 950-darkest, p-4 that is 1 rem, 1 rem=16px-->
+    <div class="max-w-7xl mx-auto flex justify-between items-center"> 
+        <!--w=width of 7xl(1280px), mx=margin x axis used to centering the content, flex is a css layout model used to align items hori/verti-->
+      <a href="#" class="text-white text-2xl font-bold">My Portfolio</a>
+      <ul class="flex space-x-6 text-white"> 
+        <li><a href="#about" class="hover:text-gray-300">About Me</a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>  
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-teal-700 text-white py-20 text-center" id="hero">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold">Hello, I'm Bhuvaneshwari</h1>
+      <p class="mt-4 text-lg">A passionate developer, focused on building impactful applications.</p><!--margin top is 4, lg=large(18px)-->
+      <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-300">Get in Touch</a>
+    </div>
+  </section>
+ 
+  <!-- About Me Section -->
+  <section class="py-20 px-4 text-center" id="about">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold text-teal-600">About Me</h2>
+      <p class="mt-6 text-lg text-gray-700">I am a web developer passionate about building functional, user-friendly applications. I love learning new technologies and improving my skills in the field of software development.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="bg-gray-100 py-20" id="projects">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-teal-600">My Projects</h2>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"><!--small screen= sm, large = lg-->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Project 1</h3>
+          <p class="mt-2 text-gray-600">A brief description of your first project goes here. This could be a web app or any software you’ve developed.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Project 2</h3>
+          <p class="mt-2 text-gray-600">A brief description of your second project goes here. Include the technology used and the problem it solves.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Project 3</h3>
+          <p class="mt-2 text-gray-600">A brief description of your third project goes here. Highlight your role and what you learned during development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 px-4 bg-teal-600 text-white" id="contact">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold">Contact Me</h2>
+      <p class="mt-4 text-lg">Feel free to reach out to me for collaborations or job opportunities. I’m always excited to discuss new projects!</p>
+      <form action="#" method="POST" class="mt-8 space-y-6">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focxus:ring-2 focus:ring-blue-500 text-gray-900" required><!--requires is used when the field is mandatory-->
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900" required>
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900" required></textarea>
+        <button type="submit" class="w-full py-3 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-700 text-white-1000 py-4 text-center">
+    <p>&copy; 2024 Bhuvanehswari. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
